@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หจก.รวมเอส รีไซเคิล 2000 - ผู้เชี่ยวชาญด้านรีไซเคิลอุตสาหกรรม</title>
+    <meta name="description"
+        content="หจก.รวมเอส รีไซเคิล 2000 รับซื้อเศษเหล็ก โลหะทุกชนิด ประมูลงานโรงงาน และบริการเครื่องชั่งน้ำหนักมาตรฐาน ในสมุทรปราการ">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #9e1c28 !important;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            white-space: normal;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            width: auto;
+            margin-right: 15px;
+            background: white;
+            padding: 2px;
+            border-radius: 5px;
+        }
+
+        .header-contact-info {
+            font-size: 0.8rem;
+            color: #ffffff;
+            display: block;
+            font-weight: normal;
+            opacity: 0.9;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://github.com/Naphat-09/-/blob/main/opposit%20office.jpg?raw=true');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+        }
+
+        .about-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+
+        .highlight-text {
+            color: #9e1c28;
+            font-weight: bold;
+        }
+
+        .info-badge {
+            background-color: #ffffff;
+            border-left: 5px solid #9e1c28;
+            padding: 25px;
+            margin-top: 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .info-img {
+            max-width: 280px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .material-card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            height: 100%;
+        }
+
+        .material-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .material-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .material-body {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .material-title {
+            font-weight: bold;
+            color: #9e1c28;
+            margin-bottom: 0;
+        }
+
+        .industrial-logo {
+            max-height: 70px;
+            width: auto;
+            filter: grayscale(30%);
+            transition: all 0.3s;
+            margin-bottom: 15px;
+        }
+
+        .industrial-logo:hover {
+            filter: grayscale(0%) scale(1.05);
+        }
+
+        .map-container {
+            position: relative;
+            padding-bottom: 400px;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media (max-width: 991px) {
+            .navbar-brand img {
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            .navbar-brand div {
+                font-size: 1rem;
+            }
+
+            .header-contact-info {
+                display: none;
+            }
+
+            .hero-section {
+                padding: 80px 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .hero-section h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-section .btn {
+                display: block;
+                width: 100%;
+                margin: 0 0 10px 0 !important;
+            }
+
+            .material-img {
+                height: 120px;
+            }
+
+            .map-container {
+                padding-bottom: 300px;
+            }
+
+            .about-section,
+            #materials,
+            #industrial,
+            #contact {
+                padding: 40px 0 !important;
+            }
+        }
+
+        /* Override Bootstrap Theme Colors */
+        .text-success, .text-primary { color: #9e1c28 !important; }
+        .bg-success, .bg-primary { background-color: #9e1c28 !important; }
+        .border-success, .border-primary { border-color: #9e1c28 !important; }
+        .btn-success, .btn-primary { 
+            background-color: #9e1c28 !important; 
+            border-color: #9e1c28 !important; 
+            color: #ffffff !important;
+        }
+        .btn-success:hover, .btn-primary:hover, .btn-success:focus, .btn-primary:focus {
+            background-color: #7d1520 !important;
+            border-color: #7d1520 !important;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="https://github.com/Naphat-09/-/blob/main/ruam%20s%20logo.jpg?raw=true"
+                    alt="โลโก้ หจก.รวมเอส รีไซเคิล 2000">
+                <div>
+                    หจก.รวมเอส รีไซเคิล 2000
+                    <span class="header-contact-info">unions.recycle_2000@hotmail.com</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">เกี่ยวกับเรา</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#industrial">ประสบการณ์</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#materials">รายการสินค้า</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">หจก.รวมเอส รีไซเคิล 2000</h1>
+            <p class="lead mb-4">พันธมิตรด้านการจัดการเศษวัสดุอุตสาหกรรมที่คุณไว้วางใจ</p>
+            <a href="tel:027022480" class="btn btn-success btn-lg px-4 me-2">โทร: 02-702-2480</a>
+            <a href="https://maps.app.goo.gl/gmbhgtBSXqqktmQg6" target="_blank"
+                class="btn btn-primary btn-lg px-4">นำทางไปที่ร้าน</a>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-uppercase">ประวัติและความเชี่ยวชาญ</h2>
+            <div class="p-4 bg-white shadow-sm rounded border">
+                <h4 class="fw-bold text-success">Union S. Recycle 2000 Limited Partnership</h4>
+                <p style="text-indent: 50px; line-height: 1.8;">เรารับประมูล รับซื้อ และจำหน่าย ทั้งค้าปลีก
+                    ค้าส่งเศษของผลิตภัณฑ์วัสดุในทางอุตสาหกรรมที่ไม่ใช้แล้ว เริ่มก่อตั้งเมื่อปี <span
+                        class="highlight-text">พ.ศ. 2543</span> โดยคุณสมชาย ขาวสุวรรณ ด้วยประสบการณ์มากกว่า 20 ปี
+                    พร้อมให้บริการลูกค้าทุกประเภท ทุกขั้นตอน</p>
+
+                <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <div class="info-badge h-100">
+                            <h5 class="fw-bold text-success mb-3">🚛 แผนกขนส่งและการบริการ</h5>
+                            <img src="https://github.com/Naphat-09/picture-file-public/blob/main/parking%20lot.jpg?raw=true"
+                                alt="ทีมรถบรรทุก หจก.รวมเอส" class="info-img img-fluid shadow-sm">
+                            <p class="small">เรามีรถบรรทุกกว่า 10 คัน (4-10 ล้อ, หัวลาก, รถพ่วง, รถคีบ)
+                                ตอบสนองงานทุกประเภท พร้อมใบอนุญาตถูกต้อง
+                                <strong>สามารถวางกระบะทิ้งไว้ที่โรงงานลูกค้า</strong>
+                                เพื่อให้ลูกค้าจัดเก็บเศษวัสดุได้ง่ายและขนส่งได้รวดเร็วทันทีที่เต็ม
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="info-badge h-100">
+                            <h5 class="fw-bold text-success mb-3">⚖️ เครื่องชั่งน้ำหนักมาตรฐานสากล</h5>
+                            <img src="https://github.com/Naphat-09/picture-file-public/blob/main/tar%20chank%20yai2.jpg?raw=true"
+                                alt="เครื่องชั่งรถบรรทุกมาตรฐาน" class="info-img img-fluid shadow-sm">
+                            <p>ให้บริการด้วยเครื่องชั่งดิจิทัลที่ผ่านการตรวจสอบแม่นยำที่เชื่อถือและไว้ใจได้
+                                ซึ่งเราได้รับมาตรฐานจากกระทรวงพาณิชย์ มีการสอบเทียบตามที่กฎหมายกำหนด
+                                <strong>เปิดรับจ้างชั่งพาหนะทุกประเภท</strong>
+                                สำหรับบุคคลทั่วไปและภาคธุรกิจที่ต้องการใบชั่งน้ำหนักที่น่าเชื่อถือ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="materials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-2 fw-bold text-uppercase">รายการสินค้าที่รับซื้อ</h2>
+            <p class="text-center text-muted mb-5">
+                เรามีความชำนาญในการคัดแยกและให้ราคาดีที่สุดสำหรับวัสดุอุตสาหกรรมทุกประเภท</p>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="material-card shadow-sm">
+                        <img src="https://github.com/Naphat-09/picture-file-public/blob/main/%E0%B9%80%E0%B8%A8%E0%B8%A9%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%87%E0%B8%81.jpg?raw=true"
+                            class="material-img" alt="เศษเหล็ก">
+                        <div class="material-body">
+                            <p class="material-title">เศษเหล็ก</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="material-card shadow-sm">
+                        <img src="https://github.com/Naphat-09/picture-file-public/blob/main/%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%87%E0%B8%81%E0%B8%9B%E0%B8%B1%E0%B9%8A%E0%B8%A1.jpg?raw=true"
+                            class="material-img" alt="เหล็กปั๊ม">
+                        <div class="material-body">
+                            <p class="material-title">เหล็กปั๊ม</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="material-card shadow-sm">
+                        <img src="https://github.com/Naphat-09/picture-file-public/blob/main/%E0%B8%82%E0%B8%B5%E0%B9%89%E0%B8%81%E0%B8%A5%E0%B8%B6%E0%B8%87.jpg?raw=true"
+                            class="material-img" alt="ขี้กลึง">
+                        <div class="material-body">
+                            <p class="material-title">ขี้กลึง</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="material-card shadow-sm">
+                        <img src="https://github.com/Naphat-09/picture-file-public/blob/main/%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B9%81%E0%B8%94%E0%B8%87.jpg?raw=true"
+                            class="material-img" alt="ทองแดง">
+                        <div class="material-body">
+                            <p class="material-title">ทองแดง</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="material-card shadow-sm">
+                        <img src="https://github.com/Naphat-09/picture-file-public/blob/main/%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%87.jpg?raw=true"
+                            class="material-img" alt="ทองเหลือง">
+                        <div class="material-body">
+                            <p class="material-title">ทองเหลือง</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="material-card shadow-sm">
+                        <img src="https://github.com/Naphat-09/picture-file-public/blob/main/%E0%B8%A1%E0%B8%B4%E0%B9%80%E0%B8%99%E0%B8%B5%E0%B8%A2%E0%B8%A1.jpg?raw=true"
+                            class="material-img" alt="อลูมิเนียม">
+                        <div class="material-body">
+                            <p class="material-title">อลูมิเนียม</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="material-card shadow-sm">
+                        <img src="https://github.com/Naphat-09/picture-file-public/blob/main/%E0%B8%AA%E0%B9%81%E0%B8%95%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B8%AA.jpg?raw=true"
+                            class="material-img" alt="สแตนเลส">
+                        <div class="material-body">
+                            <p class="material-title">สแตนเลส</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="material-card shadow-sm border border-success">
+                        <div class="d-flex align-items-center justify-content-center bg-success text-white"
+                            style="height: 180px;">
+                            <h4 class="text-center p-3">และ<br>สินค้าอื่น ๆ </h4>
+                        </div>
+                        <div class="material-body">
+                            <p class="material-title">รับซื้อหน้าร้าน</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="industrial" class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">ประสบการณ์ในพื้นที่อุตสาหกรรม</h2>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6 col-md-3 industrial-item">
+                    <img src="https://github.com/Naphat-09/picture-file-public/blob/main/AMATA.jpg?raw=true"
+                        alt="อมตะนคร ชลบุรี" class="industrial-logo img-fluid">
+                    <p class="small fw-bold text-uppercase">อมตะนคร ชลบุรี</p>
+                </div>
+                <div class="col-6 col-md-3 industrial-item">
+                    <img src="https://github.com/Naphat-09/picture-file-public/blob/main/ieat.jpg?raw=true"
+                        alt="นิคมอุตสาหกรรมบางปู" class="industrial-logo img-fluid">
+                    <p class="small fw-bold text-uppercase">นิคมอุตสาหกรรม บางปู</p>
+                </div>
+                <div class="col-6 col-md-3 industrial-item">
+                    <img src="https://github.com/Naphat-09/picture-file-public/blob/main/304.jpg?raw=true"
+                        alt="สวนอุตสาหกรรม 304" class="industrial-logo img-fluid">
+                    <p class="small fw-bold text-uppercase">สวนอุตสาหกรรม 304 ปราจีนบุรี</p>
+                </div>
+                <div class="col-6 col-md-3 industrial-item">
+                    <img src="https://github.com/Naphat-09/picture-file-public/blob/main/ieat.jpg?raw=true"
+                        alt="นิคมอุตสาหกรรมอีสเทิร์นซีบอร์ด ระยอง" class="industrial-logo img-fluid">
+                    <p class="small fw-bold text-uppercase">นิคมอุตสาหกรรม อีสเทิร์นซีบอร์ด ระยอง</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="map-container shadow border">
+                        <iframe
+                            src="https://maps.google.com/maps?q=%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%B8%E0%B9%89%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%A7%E0%B8%99%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94+%E0%B8%A3%E0%B8%A7%E0%B8%A1+%E0%B9%80%E0%B8%AD%E0%B8%AA.%E0%B8%A3%E0%B8%B5%E0%B9%84%E0%B8%8B%E0%B9%80%E0%B8%84%E0%B8%B4%E0%B8%A5+2000&hl=th&z=16&output=embed"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="bg-white p-4 rounded shadow border h-100">
+                        <h3 class="fw-bold mb-4">ติดต่อเรา</h3>
+                        <p><strong>ที่อยู่:</strong> 39/2 ซอย 12 ร.ร.สมุทรปราการ ต.ปากน้ำ อ.เมือง จ.สมุทรปราการ 10270
+                        </p>
+                        <hr>
+                        <p><strong>ฝ่ายบริการลูกค้า:</strong><br>
+                            <a href="tel:027022480" class="text-success h4 fw-bold text-decoration-none">02-702-2480</a>
+                            /
+                            <a href="tel:027021212" class="text-success h4 fw-bold text-decoration-none">02-702-1212</a>
+                        </p>
+                        <p><strong>Email:</strong> <a href="mailto:unions.recycle_2000@hotmail.com"
+                                class="text-decoration-none text-dark">unions.recycle_2000@hotmail.com</a></p>
+                        <hr>
+                        <p><strong>เวลาทำการ:</strong> จันทร์-เสาร์ (08.00-17.00 น.)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">© 2026 หจก.รวมเอส รีไซเคิล 2000. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
